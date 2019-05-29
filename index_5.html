@@ -1,0 +1,35 @@
+<html>
+    <head>
+            <meta charset="utf-8"/>
+        <script>
+            function Search()
+            {
+               var url2 = document.getElementById("url1").value;
+               var h = document.getElementById("height").value;
+               var w = document.getElementById("width").value;               
+               var frame = document.getElementById("frame1");
+               frame.setAttribute("src",url2);
+               frame.setAttribute("height",h);
+               frame.setAttribute("width",w);
+            }
+            function Reset()
+            {
+                document.getElementById("url1").value = " ";
+                document.getElementById("height").value = " ";
+                document.getElementById("width").value = " ";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>5th Page</h2>
+        Enter the url: 
+        <input type="text" name="url" id="url1"><br>
+        Height:
+        <input type="text" name="height" id="height"><br>
+        Width:
+        <input type="text" name="width" id="width"><br>
+        <input type="button" value="RESET" onclick="Reset()">
+        <input type="button" value="GO" onclick="Search()"><br><br>
+        <iframe src="https://www.google.com/webhp?igu=1" id="frame1" height="400px" width="400px"></iframe>
+    </body>
+</html>
