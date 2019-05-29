@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8"/>
+        <style>
+            iframe {
+                height: auto;
+                width: 30%;
+                max-width: 400px;
+            }
+        </style>
+        <script>
+            function Google()
+            {
+                var frame = document.getElementById("frame");
+                frame.setAttribute("src","https://www.google.com/webhp?igu=1");
+            }
+            function Wikipedia()
+            {
+                var frame = document.getElementById("frame");
+                frame.setAttribute("src","https://www.wikipedia.org/");
+            }
+            function Bing()
+            {
+                var frame = document.getElementById("frame");
+                frame.setAttribute("src","https://wwww.bing.com/");
+            }
+            function Arzoo()
+            {
+                var frame = document.getElementById("frame");
+                frame.setAttribute("src","https://arzoor.github.io/arzoo/");
+            }
+        </script>
+	</head>
+	<body>
+        <h2>Some Option There :)</h2>
+        <input type="button" value="Google" onclick="Google()">
+        <input type="button" value="Wikipedia" onclick="Wikipedia()">
+        <input type="button" value="Bing" onclick="Bing()">
+        <input type="button" value="Arzoo(:P)" onclick="Arzoo()"> <br><br>
+        <iframe src="https://www.google.com/webhp?igu=1" height="600px" width="400px" id="frame" ></iframe>
+	</body>
+</html>
